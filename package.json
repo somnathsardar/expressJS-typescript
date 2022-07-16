@@ -8,7 +8,8 @@
     "prestart": "npm run build",
     "start": "node dist/index.js",
     "dev": "env-cmd --file .env nodemon index.ts",
-    "lint": "tslint -c tslint.json -p tsconfig.json --fix"
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint-fix": "tslint -c tslint.json -p tsconfig.json --fix"
   },
   "keywords": [],
   "author": "",

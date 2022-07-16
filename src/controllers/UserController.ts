@@ -3,7 +3,7 @@ import { Request, Response } from "express"
 export class UserController {
 
   constructor() {}
-  
+
   /**
    * @description Retrives records.
    * @param req Request - Express request object

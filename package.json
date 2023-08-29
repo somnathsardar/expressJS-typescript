@@ -1,7 +1,7 @@
 {
   "name": "expressjs-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Expressjs using typescript",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -11,9 +11,9 @@
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "lint-fix": "tslint -c tslint.json -p tsconfig.json --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["node", "typescript", "expressjs"],
+  "author": "Somnath Official",
+  "license": "MIT",
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",

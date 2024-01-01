@@ -1,3 +1,4 @@
+import path from "path"
 import express from "express"
 import cors from "cors"
 import routes from "./routes"
@@ -11,7 +12,7 @@ const options: cors.CorsOptions = {
 };
 
 app.use(cors(options))
-
+app.use(express.static(path.join(__dirname, '../public')))
 app.use(express.json())
 app.use(routes)
 

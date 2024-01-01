@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+}
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: black;
+}
+
+.container {
+  height: 100vh;
+}
+
+.welcome-text {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.welcome-text h1 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+.example-routes {
+  position: relative;
+  padding: 4px 15px 4px 35px;
+  background-color: #444950;
+  display: inline-block;
+  width: auto;
+  border-radius: 40px;
+  border: 1px solid #17191B;
+  border-right-color: black;
+  margin-bottom: 30px;
+}
+
+.example-routes:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: rgb(138, 145, 150);
+  background: -moz-linear-gradient(top, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
+  background: linear-gradient(to bottom, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(112, 120, 125, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a9196', endColorstr='#70787d', GradientType=0);
+  border-radius: 100%;
+  border: 1px solid #17191B;
+  left: 5px;
+}
+
+table {
+  font-size: 13px;
+}

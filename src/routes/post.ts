@@ -1,10 +1,11 @@
-import { Request, Response, Router } from "express"
+import { Router } from "express"
 import { PostController } from "../controllers/PostController"
 const route = Router()
+const postController = new PostController()
 
-route.get('/', (req:Request, res:Response) => (new PostController()).index(req, res))
-route.post('/', (req:Request, res:Response) => (new PostController()).store(req, res))
-route.put('/', (req:Request, res:Response) => (new PostController()).update(req, res))
-route.delete('/', (req:Request, res:Response) => (new PostController()).destroy(req, res))
+route.get('/', postController.index)
+route.post('/', postController.store)
+route.put('/', postController.update)
+route.delete('/', postController.destroy)
 
 export default route;
